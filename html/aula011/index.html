@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        label {
+            cursor: pointer;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="get" target="_blank" autocomplete="off">
+        <p>O meu formúlario</p>
+        <p> 
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome">
+        </p>
+        <p> 
+            <label for="dev">Sou um dev</label>
+            <input type="checkbox" id="dev1" name="dev" value="sim">
+            <label for="dev2">Sou um dev</label>
+            <input type="checkbox" id="dev2" name="dev2" value="sim">
+            <label for="dev3">Sou um dev</label>
+            <input type="checkbox" id="dev3" name="dev3" value="sim">
+        </p>
+        <p> 
+            Gênero:
+            <label for="masculino">masculino</label>
+            <input type="radio" id="masculino" name="genero" value="masculino" checked>
+            <label for="feminino">feminino</label>
+            <input type="radio" id="feminino" name="genero" value="feminino">
+            <label for="outro_outra">Outro ou Outra</label>
+            <input type="radio" id="outro_outra" name="genero" value="outro_outra">
+        </p>
+        <p> 
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" value="2026-01-14">
+        </p>
+        <p> 
+            <label for="datetime">Date:</label>
+            <input type="datetime-local" id="datetime" name="datetime" value="2026-01-14T14:33">
+        </p>
+        <p> 
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" value="14:33:01">
+        </p>
+        <p> 
+            <label for="cor">Cor preferida:</label>
+            <input type="color" id="cor" name="cor" value="#003d66">
+        </p>
+        <p> 
+            <label for="email">Seu e-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Ex.: email@email.com">
+        </p>
+        <p> 
+            <label for="file">Sua foto</label>
+            <input type="file" id="file" name="file" accept=".png">
+        </p>
+        <p> 
+            <label for="number">Number</label>
+            <input type="number" id="number" name="number" placeholder="Digite um numero" min="10" max="50" step="5">
+        </p>
+        <p> 
+            <label for="password">Sua senha:</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha">
+        </p>
+        <p> 
+            <label for="range">range</label>
+            <input type="range" id="range" name="range" list="tickmarks" min="0" max="10">
+
+            <datalist id="tickmarks">
+                <option value="0" label="0%"></option>
+                <option value="5" label="5%"></option>
+                <option value="10" label="10%"></option>
+            </datalist>
+        </p>
+        <p> 
+            <label for="url">Sua url</label>
+            <input type="url" id="url" name="url" placeholder="URL">
+        </p>
+        <p> 
+            <label for="search">Search</label>
+            <input type="search" id="search" name="search" placeholder="Search">
+        </p>
+        <p>
+            <label for="select">Selecione alguma opção</label>
+            <select name="select" id="select">
+                <optgroup label="Teste">
+                    <option value="qualquer 1" label="Label 1">Valor</option>
+                    <option value="qualquer 2" label="Label 2" disabled>Valor</option>
+                    <option value="qualquer 3" label="Label 3" selected>Valor</option>
+                    <option value="qualquer 4" label="Label 4">Valor</option>
+                </optgroup>    
+            </select>
+        </p>
+        <p> 
+            <label for="textarea">textarea</label>
+            <textarea name="" id="" rows="3" cols="9">Se colocar</textarea>
+        </p>
+
+
+        <p>
+            <button type="reset">Limpar</button>
+            <button type="submit">Enviar</button>
+            
+        </p>
+    </form>
+</body>
+</html>
+
+<!-- Aula 577. Formulários e inputs HTML - Parte 1
+ Parte 1- Apresentando o formúlario e referencias de pesquisas como o w3 html forms, mostrou o basico sobre o form, action que é o local para onde vai, e o method que seria get.
+ 
+ Aula 578. Formuláros e Inputs HTML - Parte 2
+ Utilizamos o type e seus modelo como text, radio, checkbox, inserimos o button utilizando o type reset e enviar, entendimento do uso de id, name, e value que é mais voltado para o backend.
+
+ Aula 579. Formulários e Inputs HTML - Parte 3
+Aprendemos sobre o data "date"o data com hora "date time", as horas "time", cor "color" e e-mail"email" e arquivos como imagem, utilizando o "file", utilizando juntamente o accept ele vai mostrar e tentar definir que exiba do tipo informando exemplo .png,utilizando o multiple que permite marcar mais de um arquivo 
+Utilizamos o tipo number também que pode inserir juntamente o valor minimo "min", "max" e pulos "step"
+
+Aula 580. Formulário e Inputs HTML - Parte 4
+Aprendemos o uso do formulario com o campo de url, search o de opção utilizando o select e o textearea que é um campo de texto.
+ -->
